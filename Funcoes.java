@@ -7,9 +7,9 @@ public class Funcoes {
 		// Vetor de códigos G
 		boolean verifica = false;
 		if(cod.length() == 3)
-			cod = cod.substring(0, 3);
+			cod = cod.substring(0, 2);
 		else if (cod.length() > 3)
-			cod = cod.substring(0, 4);
+			cod = cod.substring(0, 3);
 		cod = cod.toUpperCase();
 		String[] codigosG = { 
 				"G00", "G01", "G02", "G03", "G04", "G10", "G17", "G18", "G19", "G20", "G21", "G28", "G40",
@@ -44,9 +44,9 @@ public class Funcoes {
 					return verifica;
 				}
 			}
-		}
-
+		}else{
 		return verifica;
+		}
 
 	}
 
