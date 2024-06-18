@@ -1,6 +1,6 @@
 setInterval(() => {
   dadoscnc(), status();
-}, 10);
+});
 
 function dadoscnc() {
   const valor = new XMLHttpRequest();
